@@ -1,0 +1,12 @@
+body {
+  min-height: 100dvh;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.gradientBackground {
+  background: linear-gradient(345deg, #eaff0005, #eaff0010);
+}
