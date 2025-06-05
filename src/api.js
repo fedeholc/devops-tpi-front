@@ -1,7 +1,8 @@
 // src/api.js
 // Servicios para consumir la API backend según openapi.yaml
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+// Use environment variable or fallback to relative URL for nginx proxy
+const API_URL = import.meta.env.VITE_API_URL || "/api";
 
 // Helper para armar headers (con o sin token)
 function getHeaders(token, isJson = true) {
