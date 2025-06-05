@@ -9,6 +9,8 @@ npm-debug.log
 .gitignore
 README.md
 readme.md
+# Temporalmente excluir package-lock.json para evitar problemas con ARM64
+package-lock.json
 .vscode
 dist
 *.log
