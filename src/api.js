@@ -1,7 +1,7 @@
 // src/api.js
 // Servicios para consumir la API backend según openapi.yaml
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
 
 // Helper para armar headers (con o sin token)
 function getHeaders(token, isJson = true) {
