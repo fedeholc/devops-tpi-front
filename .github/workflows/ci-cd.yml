@@ -30,9 +30,8 @@ jobs:
       - name: Build application
         run: npm run build
 
-      # TODO: Agregar tests cuando estén disponibles
-      # - name: Run tests
-      #   run: npm test
+      - name: Run tests
+        run: npm test
 
   build-and-push:
     needs: build-test
