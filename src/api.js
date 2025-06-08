@@ -1,8 +1,7 @@
 // src/api.js
 // Servicios para consumir la API backend según openapi.yaml
 
-// Use environment variable or fallback to relative URL for nginx proxy
-const API_URL = import.meta.env.VITE_API_URL || "/api";
+const API_URL = "http://localhost:5000/api";
 
 // Helper para armar headers (con o sin token)
 function getHeaders(token, isJson = true) {
@@ -17,6 +16,7 @@ function getHeaders(token, isJson = true) {
 /**@typedef {import('../types').Area} Area */
 /**@typedef {import('../types').Usuario} Usuario */
 /**@typedef {import('../types').Tecnico} Tecnico */
+/**@typedef {import('../types').TecnicoCompleto} TecnicoCompleto */
 /**@typedef {import('../types').TecnicoArea} TecnicoArea */
 /**@typedef {import('../types').Pedido} Pedido */
 /**@typedef {import('../types').PedidoCandidato} PedidoCandidato */
@@ -433,7 +433,7 @@ export const getTecnicos = (token) =>
  * Obtener un técnico por ID
  * @param {number} id
  * @param {string} token
- * @returns {Promise<Tecnico>}
+ * @returns {Promise<TecnicoCompleto>}
  */
 export const getTecnico = (id, token) =>
   fetch(`${API_URL}/tecnicos/${id}`, { headers: getHeaders(token) }).then((r) =>
