@@ -25,3 +25,5 @@ dist-ssr
 
 # VsCode workspace
 pp4*.code-workspace
+test-results/.last-run.json
+playwright-report/index.html
