@@ -152,10 +152,10 @@ describe("PedidoNuevo Component", () => {
     const diasSemana = [
       "Lunes",
       "Martes",
-      "Miércoles",
+      "Miercoles",
       "Jueves",
       "Viernes",
-      "Sábado",
+      "Sabado",
       "Domingo",
     ];
 

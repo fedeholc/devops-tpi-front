@@ -76,10 +76,10 @@ export const PedidoSchema = z.object({
 export const PedidoDisponibilidadDiaEnum = z.enum([
   "lunes",
   "martes",
-  "miércoles",
+  "miercoles",
   "jueves",
   "viernes",
-  "sábado",
+  "sabado",
   "domingo",
 ]);
 

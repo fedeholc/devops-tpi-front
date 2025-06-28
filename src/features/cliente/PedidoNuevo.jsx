@@ -121,10 +121,10 @@ export function PedidoNuevo() {
   const diasSemana = [
     "lunes",
     "martes",
-    "miércoles",
+    "miercoles",
     "jueves",
     "viernes",
-    "sábado",
+    "sabado",
     "domingo",
   ];
 
