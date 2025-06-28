@@ -29,6 +29,16 @@ export default defineConfig({
       "@src": path.resolve(__dirname, "./src"), // Alias para la carpeta 'src'
     },
   },
+  build: {
+    // Ensure UTF-8 encoding in build output
+    rollupOptions: {
+      output: {
+        assetFileNames: "assets/[name]-[hash][extname]",
+        chunkFileNames: "assets/[name]-[hash].js",
+        entryFileNames: "assets/[name]-[hash].js",
+      },
+    },
+  },
   test: {
     globals: true,
     environment: "jsdom",
